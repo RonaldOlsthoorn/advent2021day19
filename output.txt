@@ -1,0 +1,147 @@
+main scanner first beacon: [[-775, -554, -532]]
+Found overlap 2 out of 37
+main scanner first beacon: [[624, 622, -621]]
+Found overlap 3 out of 37
+main scanner first beacon: [[-664, 626, 764]]
+Found overlap 4 out of 37
+main scanner first beacon: [[492, -446, -368]]
+Found overlap 5 out of 37
+main scanner first beacon: [[788, 552, -857]]
+Found overlap 6 out of 37
+main scanner first beacon: [[410, -606, 803]]
+Found overlap 7 out of 37
+main scanner first beacon: [[-476, -681, -773]]
+Found overlap 8 out of 37
+main scanner first beacon: [[-326, 322, 730]]
+Found overlap 9 out of 37
+main scanner first beacon: [[337, -770, -686]]
+Found overlap 10 out of 37
+main scanner first beacon: [[-471, -463, 618]]
+Found overlap 11 out of 37
+main scanner first beacon: [[729, 503, -479]]
+Found overlap 12 out of 37
+main scanner first beacon: [[-263, 581, -415]]
+Found overlap 13 out of 37
+main scanner first beacon: [[556, -743, 700]]
+Found overlap 14 out of 37
+main scanner first beacon: [[-441, 556, -929]]
+Found overlap 15 out of 37
+main scanner first beacon: [[423, -847, 767]]
+Found overlap 16 out of 37
+main scanner first beacon: [[773, -717, -634]]
+Found overlap 17 out of 37
+main scanner first beacon: [[-622, 343, 490]]
+Found overlap 18 out of 37
+main scanner first beacon: [[580, -390, -635]]
+main scanner first beacon: [[-775, -554, -532]]
+Found overlap 19 out of 37
+main scanner first beacon: [[-775, -554, -532]]
+main scanner first beacon: [[624, 622, -621]]
+main scanner first beacon: [[-664, 626, 764]]
+Found overlap 20 out of 37
+main scanner first beacon: [[-664, 626, 764]]
+Found overlap 21 out of 37
+main scanner first beacon: [[-664, 626, 764]]
+main scanner first beacon: [[492, -446, -368]]
+Found overlap 22 out of 37
+main scanner first beacon: [[492, -446, -368]]
+Found overlap 23 out of 37
+main scanner first beacon: [[492, -446, -368]]
+main scanner first beacon: [[788, 552, -857]]
+Found overlap 24 out of 37
+main scanner first beacon: [[788, 552, -857]]
+Found overlap 25 out of 37
+main scanner first beacon: [[788, 552, -857]]
+main scanner first beacon: [[410, -606, 803]]
+main scanner first beacon: [[-476, -681, -773]]
+Found overlap 26 out of 37
+main scanner first beacon: [[-476, -681, -773]]
+Found overlap 27 out of 37
+main scanner first beacon: [[-476, -681, -773]]
+Found overlap 28 out of 37
+main scanner first beacon: [[-476, -681, -773]]
+main scanner first beacon: [[-326, 322, 730]]
+main scanner first beacon: [[337, -770, -686]]
+Found overlap 29 out of 37
+main scanner first beacon: [[337, -770, -686]]
+main scanner first beacon: [[-471, -463, 618]]
+main scanner first beacon: [[729, 503, -479]]
+main scanner first beacon: [[-263, 581, -415]]
+main scanner first beacon: [[556, -743, 700]]
+main scanner first beacon: [[-441, 556, -929]]
+main scanner first beacon: [[423, -847, 767]]
+main scanner first beacon: [[773, -717, -634]]
+main scanner first beacon: [[-622, 343, 490]]
+main scanner first beacon: [[580, -390, -635]]
+main scanner first beacon: [[-492, 308, 450]]
+main scanner first beacon: [[-481, 471, -306]]
+main scanner first beacon: [[-573, -366, 309]]
+main scanner first beacon: [[816, 750, 750]]
+main scanner first beacon: [[584, -913, -621]]
+Found overlap 30 out of 37
+main scanner first beacon: [[584, -913, -621]]
+main scanner first beacon: [[646, -480, -717]]
+Found overlap 31 out of 37
+main scanner first beacon: [[646, -480, -717]]
+main scanner first beacon: [[874, 677, -708]]
+main scanner first beacon: [[394, -586, -661]]
+main scanner first beacon: [[488, 654, 558]]
+main scanner first beacon: [[-760, 373, -598]]
+main scanner first beacon: [[-399, 844, 418]]
+Found overlap 32 out of 37
+main scanner first beacon: [[-399, 844, 418]]
+main scanner first beacon: [[-401, -616, 740]]
+Found overlap 33 out of 37
+main scanner first beacon: [[-401, -616, 740]]
+main scanner first beacon: [[-760, 593, 537]]
+Found overlap 34 out of 37
+main scanner first beacon: [[-760, 593, 537]]
+Found overlap 35 out of 37
+main scanner first beacon: [[-760, 593, 537]]
+main scanner first beacon: [[-477, -923, -562]]
+main scanner first beacon: [[-238, 548, 843]]
+main scanner first beacon: [[311, 670, -775]]
+main scanner first beacon: [[-457, 602, -521]]
+Found overlap 36 out of 37
+main scanner first beacon: [[-457, 602, -521]]
+main scanner first beacon: [[12, 9, 58]]
+Found overlap 37 out of 37
+all scanners:
+Scanner at [[0, 0, 0]]
+Scanner at [[-80, 52, 1283]]
+Scanner at [[5, 63, 2538]]
+Scanner at [[1240, 55, 2565]]
+Scanner at [[1186, 1281, 2430]]
+Scanner at [[1195, 1342, 3702]]
+Scanner at [[2377, 1258, 3717]]
+Scanner at [[2415, 1217, 4925]]
+Scanner at [[2364, 1239, 6023]]
+Scanner at [[2398, 2456, 6145]]
+Scanner at [[2406, 2571, 7337]]
+Scanner at [[2364, 1345, 7273]]
+Scanner at [[2336, 1349, 8413]]
+Scanner at [[2386, 1183, 9749]]
+Scanner at [[2312, 2549, 9777]]
+Scanner at [[2329, 2553, 10906]]
+Scanner at [[3545, 2415, 10970]]
+Scanner at [[4729, 2504, 10854]]
+Scanner at [[-76, 151, -1118]]
+Scanner at [[-1179, 41, 2595]]
+Scanner at [[-14, 1212, 2404]]
+Scanner at [[2324, 125, 2555]]
+Scanner at [[1198, 151, 3697]]
+Scanner at [[1258, 2529, 2454]]
+Scanner at [[2426, 1273, 2530]]
+Scanner at [[3544, 1368, 3737]]
+Scanner at [[2321, 2402, 3597]]
+Scanner at [[2362, 115, 3694]]
+Scanner at [[2358, 73, 6180]]
+Scanner at [[1079, 77, 4802]]
+Scanner at [[2452, 2497, 2417]]
+Scanner at [[3603, -11, 6028]]
+Scanner at [[-59, 80, 4993]]
+Scanner at [[3551, 2397, 2409]]
+Scanner at [[2290, 3618, 2570]]
+Scanner at [[2438, 3714, 1365]]
+Scanner at [[1233, 3689, 1388]]
+beacons 19130

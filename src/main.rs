@@ -47,65 +47,65 @@ const ROTATIONS: [Rotation3<i16>; 24] = [
         [0, 0, -1],
         [0, -1, 0]]})), // O(z2x3)
     Rotation3::from_matrix_unchecked(Matrix3::from_array_storage(ArrayStorage{0: [
-        [0, 1, 0],
-        [-1, 0, 0],
+        [0, -1, 0],
+        [1, 0, 0],
         [0, 0, 1]]})), // O(z3)
     Rotation3::from_matrix_unchecked(Matrix3::from_array_storage(ArrayStorage{0: [
-        [0, 0, -1],
-        [-1, 0, 0],
-        [0, 1, 0]]})), // O(z3x)
+        [0, -1, 0],
+        [0, 0, 1],
+        [-1, 0, 0]]})), // O(z3x)
     Rotation3::from_matrix_unchecked(Matrix3::from_array_storage(ArrayStorage{0: [
         [0, -1, 0],
         [-1, 0, 0],
         [0, 0, -1]]})), // O(z3x2)
     Rotation3::from_matrix_unchecked(Matrix3::from_array_storage(ArrayStorage{0: [
-        [0, 0, 1],
-        [-1, 0, 0],
-        [0, -1, 0]]})), // O(z3x3)
-    Rotation3::from_matrix_unchecked(Matrix3::from_array_storage(ArrayStorage{0: [
-        [1, 0, 0],
-        [0, 0, -1],
-        [0, 1, 0]]})), // O(x)
-    Rotation3::from_matrix_unchecked(Matrix3::from_array_storage(ArrayStorage{0: [
         [0, -1, 0],
         [0, 0, -1],
-        [1, 0, 0]]})), // O(xz)
+        [1, 0, 0]]})), // O(z3x3)
+    Rotation3::from_matrix_unchecked(Matrix3::from_array_storage(ArrayStorage{0: [
+        [1, 0, 0],
+        [0, 0, 1],
+        [0, -1, 0]]})), // O(x)
+    Rotation3::from_matrix_unchecked(Matrix3::from_array_storage(ArrayStorage{0: [
+        [0, 0, 1],
+        [-1, 0, 0],
+        [0, -1, 0]]})), // O(xz)
     Rotation3::from_matrix_unchecked(Matrix3::from_array_storage(ArrayStorage{0: [
         [0, 0, 1],
         [0, -1, 0],
         [1, 0, 0]]})), // O(xzx)
     Rotation3::from_matrix_unchecked(Matrix3::from_array_storage(ArrayStorage{0: [
-        [0, 1, 0],
         [0, 0, 1],
-        [1, 0, 0]]})), // O(xzx2)
+        [1, 0, 0],
+        [0, 1, 0]]})), // O(xzx2)
+    Rotation3::from_matrix_unchecked(Matrix3::from_array_storage(ArrayStorage{0: [
+        [0, 0, 1],
+        [0, 1, 0],
+        [-1, 0, 0]]})), // O(xzx3)
     Rotation3::from_matrix_unchecked(Matrix3::from_array_storage(ArrayStorage{0: [
         [0, 0, -1],
-        [0, 1, 0],
-        [1, 0, 0]]})), // O(xzx3)
-    Rotation3::from_matrix_unchecked(Matrix3::from_array_storage(ArrayStorage{0: [
-        [0, 1, 0],
-        [0, 0, -1],
-        [-1, 0, 0]]})), // O(xz3)
+        [1, 0, 0],
+        [0, -1, 0]]})), // O(xz3)
     Rotation3::from_matrix_unchecked(Matrix3::from_array_storage(ArrayStorage{0: [
         [0, 0, -1],
         [0, -1, 0],
         [-1, 0, 0]]})), // O(xz3x)
     Rotation3::from_matrix_unchecked(Matrix3::from_array_storage(ArrayStorage{0: [
-        [0, -1, 0],
-        [0, 0, 1],
-        [-1, 0, 0]]})), // O(xz3x2)
+        [0, 0, -1],
+        [-1, 0, 0],
+        [0, 1, 0]]})), // O(xz3x2)
     Rotation3::from_matrix_unchecked(Matrix3::from_array_storage(ArrayStorage{0: [
-        [0, 0, 1],
+        [0, 0, -1],
         [0, 1, 0],
-        [-1, 0, 0]]})), // O(xz3x3)
+        [1, 0, 0]]})), // O(xz3x3)
     Rotation3::from_matrix_unchecked(Matrix3::from_array_storage(ArrayStorage{0: [
         [1, 0, 0],
         [0, -1, 0],
         [0, 0, -1]]})), // O(x2)
     Rotation3::from_matrix_unchecked(Matrix3::from_array_storage(ArrayStorage{0: [
         [1, 0, 0],
-        [0, 0, 1],
-        [0, -1, 0]]}))  // O(x3)
+        [0, 0, -1],
+        [0, 1, 0]]}))  // O(x3)
     ];
 
 
@@ -128,7 +128,7 @@ fn recover_area(mut scanners: Vec<Scanner>) -> usize {
 
         for (candidate_index, candidate_scanner) in scanners.iter_mut().enumerate() {
 
-            println!("candidate scanner first beacon: {:?}", candidate_scanner.beacons[0]);
+            // println!("candidate scanner first beacon: {:?}", candidate_scanner.beacons[0]);
 
             for rotation in ROTATIONS {
 
@@ -174,6 +174,8 @@ fn recover_area(mut scanners: Vec<Scanner>) -> usize {
                 if let Some((best_position_candidate, max_matches)) = position_candidates.iter().max_by(
                     |(_, v1), (_, v2)|
                             v1.len().cmp(&v2.len())) {
+
+                    // println!("rotation: {:?}, max matches {} for position {:?}", rotation, max_matches.len(), best_position_candidate);
                     if max_matches.len() >= 12 {
                         candidate_scanner.rotation = rotation;
                         candidate_scanner.position = *best_position_candidate;
@@ -200,10 +202,22 @@ fn recover_area(mut scanners: Vec<Scanner>) -> usize {
         round += 1;
     }
 
-    println!("all beacons:");
-    all_beacons.iter().for_each(|v| println!("beacon {:?}", v));
+    //println!("all beacons:");
+    //all_beacons.iter().for_each(|v| println!("beacon {:?}", v));
+    //all_beacons.len()
 
-    all_beacons.len()
+    println!("all scanners:");
+    placed_scanners.iter().for_each(|s| println!("Scanner at {:?}", s.position));
+
+    let mut max_man_dist = 0;
+
+    for (index_scanner_a, scanner_a) in placed_scanners.iter().enumerate() {
+        for scanner_b in placed_scanners[index_scanner_a..].iter() {
+            max_man_dist = std::cmp::max(max_man_dist, (scanner_a.position - scanner_b.position).abs().sum());
+        }
+    }
+
+    max_man_dist.try_into().unwrap()
 }
 
 
